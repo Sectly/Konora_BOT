@@ -6,7 +6,7 @@ app.get('/', (request, response) => {
 });
 
 let listener = app.listen(process.env.PORT, () => {
-     console.log('Your app (Version: 4.4.8) is currently listening on port: ' + listener.address().port);
+     console.log('Your app (Version: 4.4.8.1) is currently listening on port: ' + listener.address().port);
 });
 
 const Discord = require('discord.js');
@@ -16,6 +16,7 @@ const chalk = require('chalk');
 const figlet = require('figlet');
 require('dotenv').config();
 const fs = require('fs');
+
 
 roblox.setCookie(process.env.cookie).catch(async err => {
     console.log(chalk.red('Issue with logging in: ' + err));
